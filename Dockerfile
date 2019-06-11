@@ -4,6 +4,7 @@ FROM amazonlinux:2
 
 # Install minimal packages
 RUN yum update -y
+
 RUN yum install -y sudo which curl
 RUN yum install -y openssh-server openssh-clients
 RUN yum install -y shadow-utils.x86_64
